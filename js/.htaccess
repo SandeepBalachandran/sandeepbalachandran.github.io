@@ -1,0 +1,4 @@
+# RewriteEngine on
+# RewriteCond %{HTTP_HOST} ^sandeepbalachandran.comuv.com [NC,OR]
+# RewriteCond %{HTTP_HOST} ^www.sandeepbalachandran.comuv.com [NC]
+# RewriteRule ^(.*)$ https://www.sandeepbalachandran.tech/$1 [L,R=301,NC]
