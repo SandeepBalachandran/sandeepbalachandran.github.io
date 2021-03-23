@@ -16,7 +16,7 @@
 
     <script src="js/jquery.js"></script>
     <!-- <script src="js/snow.js"></script> -->
-    
+
     <link rel="stylesheet" type="text/css"
         href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <h1>Hi, I'm Sandeep</h1>
                     <h2>I make things that matter</h2>
                 </div>
-                <div class="width-100 txt-ctr cycle" >
+                <div class="width-100 txt-ctr cycle">
                     <div class="width-20 flt-lft txt-ctr">
                         <div class="plan bubbles">
                             <h1>Plan</h1>
@@ -112,7 +112,7 @@
             <div class="footer-wrapper">
                 <div class="social">
                     <p>
-                       
+
                         <span>
                             <a href="https://github.com/SandeepBalachandran" target="_blank"><i
                                     class="fa fa-github github-icon"></i></a>
@@ -123,14 +123,14 @@
                         </span>
                         <span>
                             <a href="https://stackoverflow.com/users/10189964/sandy-b" target="_blank"><i
-                                class="fa fa-stack-overflow stackoverflow-icon"  aria-hidden="true"></i></a>
+                                    class="fa fa-stack-overflow stackoverflow-icon" aria-hidden="true"></i></a>
                         </span>
                         <span>
                             <a href="https://twitter.com/Sandeepcristi" target="_blank"><i
                                     class="fa fa-twitter twitter-icon"></i></a>
-                        </span> 
+                        </span>
                     </p>
- 
+
                 </div>
                 <hr>
                 <div class="navigation-wrapper">
@@ -145,7 +145,33 @@
         </div>
 
     </div>
+    <div class="resume-section" id="resumeCover">
+        <i class="fa fa-angle-double-left drawer" id="scroll" aria-hidden="true"></i>
+        <img src="img/resume/1.png" alt="first Page" />
+        <img src="img/resume/2.png" alt="second Page" />
+    </div>
+
+    <div class="github-projects" id="githubProjects">
+        <i class="fa fa-angle-double-right slider" id="toggleGithubView" aria-hidden="true"></i>
+    </div>
 
 </body>
+<script>
+    var scroll = document.getElementById('scroll');
+    var resume = document.getElementById('resumeCover');
+
+    var githubprojects = document.getElementById('githubProjects')
+    var togglegithub = document.getElementById('toggleGithubView')
+    console.log(scroll)
+    scroll.addEventListener('click', function () {
+        resume.classList.toggle("toggleResume");
+        scroll.classList.toggle('animateHandler')
+    })
+
+    togglegithub.addEventListener('click', function () {
+        githubprojects.classList.toggle("view-github-projects");
+        togglegithub.classList.toggle('animateHandler')
+    })
+</script>
 
 </html>

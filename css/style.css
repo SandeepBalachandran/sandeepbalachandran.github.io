@@ -557,6 +557,72 @@ p{
       width: 0%;
       left: 50%;
     }
+
+     /* Resume */
+  .resume-section{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width:0;
+    background-color: #fff;
+    transition: width 1s;
+    /* overflow-y: auto; */
+  }
+  .drawer {
+    position: fixed;
+    top: 52%;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    transition: transform 1s linear;
+    animation: float 4s ease-in-out infinite;
+    /* cursor: pointer; */
+  }
+  .drawer:hover{
+    cursor: pointer;
+    animation: none;
+  }
+  .toggleResume{
+    width: 50%;
+    overflow: auto;
+  }
+
+  .resume-section img {
+    width:100%;
+  }
+
+  .github-projects {
+    position: fixed;
+    left: -15%;
+    top: -20%;
+    height: 75%;
+    width: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: width 1s;
+  }
+  .slider {
+    position: fixed;
+    top: 16%;
+    left: 2%;
+    background: transparent;
+    font-size: 40px;
+    color: white;
+    transition: transform 1s linear;
+    animation: float 4s ease-in-out infinite;
+
+  }
+  .view-github-projects{
+    width:40%
+  }
+  .animateHandler{
+    cursor: pointer;
+    transform: rotate(180deg);
+    animation:none;
+    color:black
+    
+  }
     
   
     
@@ -652,4 +718,6 @@ p{
   .home-wrapper{
     padding-top:100px;
   }
+
+ 
 }
