@@ -145,13 +145,41 @@
 
     </div>
     <div class="resume-section" id="resumeCover">
-        <i class="fa fa-angle-double-left drawer" id="scroll" aria-hidden="true"></i>
+        <i class="fa fa-angle-double-left drawer double-arrow" id="scroll" aria-hidden="true"></i>
         <img src="img/resume/1.png" alt="first Page" />
         <img src="img/resume/2.png" alt="second Page" />
     </div>
 
     <div class="github-projects" id="githubProjects">
-        <i class="fa fa-angle-double-right slider" id="toggleGithubView" aria-hidden="true"></i>
+        <i class="fa fa-angle-double-right slider double-arrow" id="toggleGithubView" aria-hidden="true"></i>
+        <div class="pr-1 git-project">
+            <a href="https://github.com/SandeepBalachandran/ngx-sand-typeahead" title="ngx-sand-typeahead" target="_blank"><i
+                    class="fa fa-github github-icon" aria-hidden="true"></i>
+                <div>ngx-sand-typeahead</div>
+            </a>
+        </div>
+        <div class="pr-2 git-project">
+            <a href="https://github.com/SandeepBalachandran/ngx-sand-simple-select" title="ngx-sand-simple-select"
+                target="_blank"><i class="fa fa-github github-icon" aria-hidden="true"></i>
+                <div>ngx-sand-simple-select</div>
+            </a>
+        </div>
+        <div class="pr-3 git-project">
+            <a href="https://github.com/SandeepBalachandran/ngx-sand-credit-cards" title="ngx-sand-credit-card"
+                target="_blank"><i class="fa fa-github github-icon" aria-hidden="true"></i>
+                <div>ngx-sand-credit-card</div>
+            </a>
+        </div>
+        </div>
+        
+        <div class="blog-posts" id="blogPosts">
+            <i class="fa fa-angle-double-up blog-slider double-arrow " id="toggleblogView" aria-hidden="true"></i>
+            <a href="https://dev.to/sandeepbalachandran" target="_blank">
+                <i class="fa fa-pencil-square-o blog-writing bottom-left-icon" aria-hidden="true"></i>
+            </a>
+            <i class="fa fa-youtube-play youtube-icon bottom-left-icon" aria-hidden=" true"></i>
+        </div>
+
     </div>
 
 </body>
@@ -161,6 +189,10 @@
 
     var githubprojects = document.getElementById('githubProjects')
     var togglegithub = document.getElementById('toggleGithubView')
+
+    var blogPosts = document.getElementById('blogPosts')
+    var toggleblogView = document.getElementById('toggleblogView')
+
     console.log(scroll)
     scroll.addEventListener('click', function () {
         resume.classList.toggle("toggleResume");
@@ -170,6 +202,11 @@
     togglegithub.addEventListener('click', function () {
         githubprojects.classList.toggle("view-github-projects");
         togglegithub.classList.toggle('animateHandler')
+    })
+
+    toggleblogView.addEventListener('click', function () {
+        blogPosts.classList.toggle("view-blog-posts");
+        toggleblogView.classList.toggle('animateHandler')
     })
 </script>
 

@@ -565,31 +565,37 @@ p{
     top: 0;
     height: 100%;
     width:0;
-    background-color: #fff;
+    background-color: transparent;
     transition: width 1s;
     /* overflow-y: auto; */
   }
-  .drawer {
+  .double-arrow{
     position: fixed;
-    top: 52%;
-    right: 30px;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     transition: transform 1s linear;
-    animation: float 4s ease-in-out infinite;
-    /* cursor: pointer; */
+    /* animation: float 4s ease-in-out infinite; */
   }
-  .drawer:hover{
+  .double-arrow:hover{
     cursor: pointer;
     animation: none;
+  }
+  .drawer {
+    top: 52%;
+    right: 30px;
+    /* cursor: pointer; */
   }
   .toggleResume{
     width: 50%;
     overflow: auto;
   }
-
+  .resume-section img:first-child {
+   
+  }
   .resume-section img {
     width:100%;
+    /* margin-bottom: 30px; */
+    height: 140%;
   }
 
   .github-projects {
@@ -602,19 +608,33 @@ p{
     background-color: #fff;
     transition: width 1s;
   }
-  .slider {
+  .blog-posts {
     position: fixed;
+    left: -15%;
+    bottom: 0;
+    height: 0;
+    width: 40%;
+    overflow:auto;
+    /* border-radius: 50%; */
+    background-color: #fff;
+    transition: height 1s;
+    border-top-right-radius: 50px 75px;
+  }
+  .slider {
     top: 16%;
     left: 2%;
-    background: transparent;
-    font-size: 40px;
-    color: white;
-    transition: transform 1s linear;
-    animation: float 4s ease-in-out infinite;
-
+  }
+  .blog-slider {
+    bottom: 2%;
+    /* transform: rotate( 90deg); */
+    left: 11%;
   }
   .view-github-projects{
     width:40%
+  }
+  .view-blog-posts{
+    height: 20%;
+   
   }
   .animateHandler{
     cursor: pointer;
@@ -623,6 +643,65 @@ p{
     color:black
     
   }
+
+  .git-project {
+    position: absolute;
+    text-align: center;
+  }
+  .pr-1{
+    top: 70%;
+    left: 40%;
+
+  }
+  .pr-2{
+    top: 48%;
+    left: 60%;
+
+  }
+  .pr-3{
+    top: 33%;
+    left: 40%;
+
+  }
+  .git-project .fa {
+    font-size: 40px;
+  }
+  .git-project a {
+    text-decoration: none;
+    color:black;
+  }
+
+  .bottom-left-icon{
+    font-size: 47px;
+    position: absolute;
+    z-index: 9;
+  
+  }
+  .blog-writing{
+    color: black;
+    bottom: 6%;
+    left: 45%;
+  }
+  .youtube-icon{
+    color: red;
+    bottom: 6%;
+    right: 14%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
   
     
