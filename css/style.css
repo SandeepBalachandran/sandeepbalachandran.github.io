@@ -433,263 +433,289 @@ p{
 
 
 .contact-head{
-    color:white;
-  }
+  color:white;
+}
   
-  .mail-response{
-    position: absolute;
-      top: 0;
-      width: 100%;
-      margin: 0 auto;
-      padding:20px;
-  }
-  .mail-response h2{
-    margin: 0 auto;
-    width: 61%;
-    background: #2E2A4F;
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px;
-  }
-  
-  .twitter-icon:hover{
-    color:#1DA1F2;
-  }
-  .github-icon:hover{
-    color:#24292E;
-  }
-  .bitbucket-icon:hover{
-    color:#0747A6;
-  }
-  .codepen-icon:hover{
-    color:#1E1F26;
-  }
-  .gitlab-icon:hover{
-    color:#FC6D26;
-  }
-  .linkedin-icon:hover{
-    color:#0077B5;
-  }
-  .stackoverflow-icon:hover{
-    color: rgb(162, 77, 8);
-  }
-
- 
-  .hamburger{
-      display:none;
-  }
-    /* Icon 1 */
-    
-    #nav-icon {
-      width: 40px;
-      height: 45px;
-      position: absolute;
-      top: 0;
-      left: 20px;
-      margin: 20px auto;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer;
-    }
-    
-    #nav-icon span{
-      display: block;
-      position: absolute;
-      height: 5px;
-      width: 100%;
-      background: white;
-      border-radius: 9px;
-      opacity: 1;
-      left: 0;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .25s ease-in-out;
-      -moz-transition: .25s ease-in-out;
-      -o-transition: .25s ease-in-out;
-      transition: .25s ease-in-out;
-    }
-    
-    
-    /* Icon 3 */
-    
-    #nav-icon span:nth-child(1) {
-      top: 0px;
-    }
-    
-    #nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
-      top: 10px;
-    }
-    
-    #nav-icon span:nth-child(4) {
-      top: 20px;
-    }
-    
-    #nav-icon.open span:nth-child(1) {
-      top: 18px;
-      width: 0%;
-      left: 50%;
-    }
-    
-    #nav-icon.open span:nth-child(2) {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-    
-    #nav-icon.open span:nth-child(3) {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-    }
-    
-    #nav-icon.open span:nth-child(4) {
-      top: 18px;
-      width: 0%;
-      left: 50%;
-    }
-
-     /* Resume */
-  .resume-section{
-    position: fixed;
-    right: 0;
+.mail-response{
+  position: absolute;
     top: 0;
-    height: 100%;
-    width:0;
-    background-color: transparent;
-    transition: width 1s;
-    /* overflow-y: auto; */
-  }
-  .double-arrow{
-    position: fixed;
-    font-size: 30px;
-    color: white;
-    transition: transform 1s linear;
-    /* animation: float 4s ease-in-out infinite; */
-  }
-  .double-arrow:hover{
-    cursor: pointer;
-    animation: none;
-  }
-  .drawer {
-    top: 52%;
-    right: 30px;
-    /* cursor: pointer; */
-  }
-  .toggleResume{
-    width: 50%;
-    overflow: auto;
-  }
-  .resume-section img:first-child {
-   
-  }
-  .resume-section img {
-    width:100%;
-    /* margin-bottom: 30px; */
-    height: 140%;
-  }
+    width: 100%;
+    margin: 0 auto;
+    padding:20px;
+}
+.mail-response h2{
+  margin: 0 auto;
+  width: 61%;
+  background: #2E2A4F;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+}
 
-  .github-projects {
-    position: fixed;
-    left: -15%;
-    top: -20%;
-    height: 75%;
-    width: 0;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: width 1s;
-  }
-  .blog-posts {
-    position: fixed;
-    left: -15%;
-    bottom: 0;
-    height: 0;
-    width: 40%;
-    overflow:auto;
-    /* border-radius: 50%; */
-    background-color: #fff;
-    transition: height 1s;
-    border-top-right-radius: 50px 75px;
-  }
-  .slider {
-    top: 16%;
-    left: 2%;
-  }
-  .blog-slider {
-    bottom: 2%;
-    /* transform: rotate( 90deg); */
-    left: 11%;
-  }
-  .view-github-projects{
-    width:40%
-  }
-  .view-blog-posts{
-    height: 20%;
-   
-  }
-  .animateHandler{
-    cursor: pointer;
-    transform: rotate(180deg);
-    animation:none;
-    color:black
-    
-  }
+.twitter-icon:hover{
+  color:#1DA1F2;
+}
+.github-icon:hover{
+  color:#24292E;
+}
+.bitbucket-icon:hover{
+  color:#0747A6;
+}
+.codepen-icon:hover{
+  color:#1E1F26;
+}
+.gitlab-icon:hover{
+  color:#FC6D26;
+}
+.linkedin-icon:hover{
+  color:#0077B5;
+}
+.stackoverflow-icon:hover{
+  color: rgb(162, 77, 8);
+}
 
-  .git-project {
-    position: absolute;
-    text-align: center;
-  }
-  .pr-1{
-    top: 70%;
-    left: 40%;
 
-  }
-  .pr-2{
-    top: 48%;
-    left: 60%;
-
-  }
-  .pr-3{
-    top: 33%;
-    left: 40%;
-
-  }
-  .git-project .fa {
-    font-size: 40px;
-  }
-  .git-project a {
-    text-decoration: none;
-    color:black;
-  }
-
-  .bottom-left-icon{
-    font-size: 47px;
-    position: absolute;
-    z-index: 9;
+.hamburger{
+    display:none;
+}
+  /* Icon 1 */
   
+  #nav-icon {
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: 20px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
   }
-  .blog-writing{
+  
+  #nav-icon span{
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  
+  /* Icon 3 */
+  
+  #nav-icon span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+    top: 10px;
+  }
+  
+  #nav-icon span:nth-child(4) {
+    top: 20px;
+  }
+  
+  #nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .download-resume-button{
+    display: none;
+    position:fixed;
+    right:5%;
+    top:2%;
+    z-index: 9;
+  }
+  .download-resume-button button{
+    padding: 7px;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-weight: bolder;
+    color: white;
+    background: black;
+  }
+  .download-resume-button button:hover{
+    border: 2px solid black;
     color: black;
-    bottom: 6%;
-    left: 45%;
-  }
-  .youtube-icon{
-    color: red;
-    bottom: 6%;
-    right: 14%;
+    background: white;
   }
 
+    /* Resume */
+.resume-section{
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width:0;
+  background-color: transparent;
+  transition: width 1s;
+  /* overflow-y: auto; */
+}
+.double-arrow{
+  position: fixed;
+  font-size: 30px;
+  color: white;
+  transition: transform 1s linear;
+  /* animation: float 4s ease-in-out infinite; */
+}
+.double-arrow:hover{
+  cursor: pointer;
+  animation: none;
+}
+.drawer {
+  top: 52%;
+  right: 30px;
+  /* cursor: pointer; */
+}
+.toggleResume{
+  width: 50%;
+  overflow: auto;
+}
+.resume-section img:first-child {
+  
+}
+.resume-section img {
+  width:100%;
+  /* margin-bottom: 30px; */
+  height: 140%;
+}
+
+.github-projects {
+  position: fixed;
+  left: -15%;
+  top: -20%;
+  height: 75%;
+  width: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: width 1s;
+}
+.blog-posts {
+  position: fixed;
+  left: -15%;
+  bottom: 0;
+  height: 0;
+  width: 40%;
+  overflow:auto;
+  /* border-radius: 50%; */
+  background-color: #fff;
+  transition: height 1s;
+  border-top-right-radius: 50px 75px;
+}
+.slider {
+  top: 16%;
+  left: 2%;
+}
+.blog-slider {
+  bottom: 2%;
+  /* transform: rotate( 90deg); */
+  left: 11%;
+}
+.view-github-projects{
+  width:40%
+}
+.view-blog-posts{
+  height: 20%;
+  
+}
+.animateHandler{
+  cursor: pointer;
+  transform: rotate(180deg);
+  animation:none;
+  color:black
+  
+}
+
+.git-project {
+  position: absolute;
+  text-align: center;
+}
+.pr-1{
+  top: 70%;
+  left: 40%;
+
+}
+.pr-2{
+  top: 48%;
+  left: 60%;
+
+}
+.pr-3{
+  top: 33%;
+  left: 40%;
+
+}
+.git-project .fa {
+  font-size: 40px;
+}
+.git-project a {
+  text-decoration: none;
+  color:black;
+}
+
+.bottom-left-icon{
+  font-size: 47px;
+  position: absolute;
+  z-index: 9;
+
+}
+.blog-writing{
+  color: black;
+  bottom: 25%;
+  left: 45%;
+}
+.youtube-icon{
+  color: red;
+  bottom: 25%;
+  right: 14%;
+}
 
 
+.danger{
+  background-color: red;
+    /* z-index: 99999; */
+    opacity: 0.5;
+    transition: 4s;
+}
 
 
 
@@ -708,6 +734,13 @@ p{
 
 
 @media only screen and (max-width: 500px) {
+  .hide-on-mobile{
+    display: none;
+  }
+  .download-resume-button{
+    display: block;
+    position:unset;
+  }
     .navigation-small-screen ul li {
         padding: 0 !important;
     }

@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css"
         href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="img/logo.jpg" type="image/gif">
 
@@ -33,6 +34,9 @@
     <div class="home main-wrapper">
         <div class="home normal-wrapper">
             <div class="width-30 flt-lft txt-ctr">
+                <div class="download-resume-button">
+                    <a href="./img/resume/Sandeep.pdf" download="Resume"><button>Download Resume</button></a>
+                </div>
                 <div class="logo-wrap">
                     <img src="img/logo.jpg" class="logo" alt="Sandeep Balachandran" title="Sandeep Balachandran">
 
@@ -144,14 +148,14 @@
         </div>
 
     </div>
-    <div class="resume-section" id="resumeCover">
-        <i class="fa fa-angle-double-left drawer double-arrow" id="scroll" aria-hidden="true"></i>
+    <div class="resume-section hide-on-mobile" id="resumeCover">
+        <i class="fa fa-angle-double-left drawer double-arrow hide-on-mobile" id="scroll" aria-hidden="true"></i>
         <img src="img/resume/1.png" alt="first Page" />
         <img src="img/resume/2.png" alt="second Page" />
     </div>
 
-    <div class="github-projects" id="githubProjects">
-        <i class="fa fa-angle-double-right slider double-arrow" id="toggleGithubView" aria-hidden="true"></i>
+    <div class="github-projects hide-on-mobile" id="githubProjects">
+        <i class="fa fa-angle-double-right slider double-arrow hide-on-mobile" id="toggleGithubView" aria-hidden="true"></i>
         <div class="pr-1 git-project">
             <a href="https://github.com/SandeepBalachandran/ngx-sand-typeahead" title="ngx-sand-typeahead" target="_blank"><i
                     class="fa fa-github github-icon" aria-hidden="true"></i>
@@ -171,15 +175,13 @@
             </a>
         </div>
         </div>
-        
-        <div class="blog-posts" id="blogPosts">
-            <i class="fa fa-angle-double-up blog-slider double-arrow " id="toggleblogView" aria-hidden="true"></i>
-            <a href="https://dev.to/sandeepbalachandran" target="_blank">
-                <i class="fa fa-pencil-square-o blog-writing bottom-left-icon" aria-hidden="true"></i>
-            </a>
-            <i class="fa fa-youtube-play youtube-icon bottom-left-icon" aria-hidden=" true"></i>
-        </div>
-
+    </div>
+    <div class="blog-posts hide-on-mobile" id="blogPosts">
+        <i class="fa fa-angle-double-up blog-slider double-arrow hide-on-mobile" id="toggleblogView" aria-hidden="true"></i>
+        <a href="https://dev.to/sandeepbalachandran" target="_blank">
+            <i class="fa fa-pencil-square-o blog-writing bottom-left-icon" aria-hidden="true"></i>
+        </a>
+        <i class="fa fa-youtube-play youtube-icon bottom-left-icon" aria-hidden=" true"></i>
     </div>
 
 </body>
@@ -193,20 +195,30 @@
     var blogPosts = document.getElementById('blogPosts')
     var toggleblogView = document.getElementById('toggleblogView')
 
-    console.log(scroll)
-    scroll.addEventListener('click', function () {
-        resume.classList.toggle("toggleResume");
-        scroll.classList.toggle('animateHandler')
+
+
+    var yt = document.querySelector('.youtube-icon')
+    yt.addEventListener('click', () => {
+        document.body.classList.add('danger')
+        setTimeout(() => {
+            document.body.classList.remove('danger')
+        }, 4000);
     })
 
-    togglegithub.addEventListener('click', function () {
-        githubprojects.classList.toggle("view-github-projects");
-        togglegithub.classList.toggle('animateHandler')
-    })
-
-    toggleblogView.addEventListener('click', function () {
-        blogPosts.classList.toggle("view-blog-posts");
-        toggleblogView.classList.toggle('animateHandler')
+    document.body.addEventListener('click', (event) => {
+        if (event.target.id === 'scroll') {
+            resume.classList.toggle("toggleResume");
+            scroll.classList.toggle('animateHandler')
+            // document.querySelector('.download-resume-button')
+            let mainHeading = document.querySelector('div').children[0].children[1].children[0].children[0]
+            // mainHeading.classList.toggle('breakThetitle')
+        } else if (event.target.id === 'toggleGithubView') {
+            githubprojects.classList.toggle("view-github-projects");
+            togglegithub.classList.toggle('animateHandler')
+        } else if (event.target.id === 'toggleblogView') {
+            blogPosts.classList.toggle("view-blog-posts");
+            toggleblogView.classList.toggle('animateHandler')
+        }
     })
 </script>
 

@@ -1,0 +1,32 @@
+.breakThetitle {
+    transition: 10s;
+    position: fixed;
+    height: auto;
+  
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    0%   {
+          bottom: 90%;
+        color: red;
+
+    }
+    10%  {
+        bottom: 50%;
+        color: yellow;
+    }
+    25%  {
+          bottom: 20%;
+        color: yellow;
+    }
+    50%  {
+          bottom: 10%;
+        color: blue;
+    }
+    100% {
+          bottom: 0;
+        color: green;
+    }
+  }
