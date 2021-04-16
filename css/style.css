@@ -559,12 +559,21 @@ p{
   }
 
   .download-resume-button{
-    display: none;
-    position:fixed;
-    right:5%;
-    top:2%;
+    display: block;
+    position: fixed;
+    right: 1%;
+    top: 2%;
+    opacity: 0.2;
     z-index: 9;
+    cursor: pointer;
   }
+  .download-resume-button:hover{
+    
+    opacity: 1;
+    cursor: pointer;
+   
+  }
+  
   .download-resume-button button{
     padding: 7px;
     border-radius: 6px;
