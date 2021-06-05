@@ -221,6 +221,21 @@
             toggleblogView.classList.toggle('animateHandler')
         }
     })
+    
+    document.addEventListener('keydown', disableMenu, false)
+    document.addEventListener('dragstart', (event) => event.preventDefault(), false)
+
+    function disableMenu(event) {
+        // console.log(event)
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            return false;
+        }
+        else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+            event.preventDefault();
+        }
+
+    }
 </script>
 
 </html>
